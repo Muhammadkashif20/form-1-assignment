@@ -13,23 +13,23 @@
         <strong>Personal Details</strong>
     </div>
     <form>
-        <p>Name*
+        <p>Name<sup>*</sup>
             <input type="text" required>
         </p>
         <p>Name of <br> (Father/Guardian)
             <input type="text">
         </p>
-        <p>Date of Birth* (dd-mm-yy)
+        <p>Date of Birth <sup>*</sup> (dd-mm-yy)
             <input type="text" required>
         </p>
-        <p>Gender*
+        <p>Gender<sup>*</sup>
             <input type="radio" name="kashif" value="Male">Male
             <input type="radio" name="kashif" value="Female">Female
         </p>
         <p>Nationality
             <input type="text">
         </p>
-        <p>Account type*
+        <p>Account type<sup>*</sup>
             <input type="radio" name="kashif" value="Savings" required>Savings
             <input type="radio" name="kashif" value="Fixed">Fixed
         </p>
@@ -38,11 +38,35 @@
             <input type="checkbox" value="Mobile Banking">Mobile Banking
             <input type="checkbox" value="SMS alerts">SMS alerts
         </p>
-      
-            <p>Address </p>
-                <textarea   cols="40" rows="5"></textarea>
-           
 
+        <p>Address </p>
+        <textarea cols="40" rows="5"></textarea>
+        <p>
+            Country </p>
+        <select>
+            <option value="Please Select">Please Select</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="Banglades">Bangladesh</option>
+        </select>
+        <p>zipcode<sup>*</sup>
+            <input type="text " required>
+        </p>
+        Phone<sup>*</sup>
+        <input type="text " required>
+        </p>
+        Email<sup>*</sup>
+        <input type="text " required>
+        </p>
+        Password (6-8 Characters) <sup>*</sup>
+        <input type="text " maxlength="8" required>
+        </p>
+        <p>
+            Verify Password<sup>*</sup>
+            <input type="text" required>
+        </p>
+        <input type="button" value="SEND">
+        <input type="button" value="CLEAR">
 
     </form>
 </body>
