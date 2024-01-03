@@ -13,7 +13,7 @@
     <div style="background-color: aqua;">
         <strong>Personal Details</strong>
     </div>
-    <form>
+    <form action="">
         <table>
 
             <p>
@@ -35,7 +35,7 @@
                 <tr>
                     <td>Date of Birth <sup>*</sup> (dd-mm-yy)</td>
                     <td></td>
-                    <td><input type="text" required></td>
+                    <td><input type="date" required></td>
                 </tr>
             </p>
             <p>
@@ -59,50 +59,98 @@
                 <tr>
                     <td>Account type<sup>*</sup></td>
                     <td></td>
-                    <td><input type="radio" name="kashif" value="Savings" required>Savings
-                        <input type="radio" name="kashif" value="Fixed">Fixed</td>
-                 
+                    <td><input type="radio" name="type" value="Savings" required>Savings
+                        <input type="radio" name="type" value="Fixed">Fixed
+                    </td>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <td>Preference</td>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" value="Internet Banking">Internet Banking
+                        <input type="checkbox" value="Mobile Banking">Mobile Banking
+                        <input type="checkbox" value="SMS alerts">SMS alerts
+                    </td>
+                </tr>
+            </p>
+            <P>
+                <tr>
+                    <td>Address</td>
+                    <td></td>
+                    <td><textarea cols="40" rows="5"></textarea></td>
+                </tr>
+            </P>
+            <P>
+                <tr>
+                    <td> Country </td>
+                    <td></td>
+                    <td> <select>
+                            <option value="Please Select">Please Select</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="India">India</option>
+                            <option value="Banglades">Bangladesh</option>
+                        </select></td>
+                </tr>
+            </P>
+            <P>
+                <tr>
+                    <td>zipcode<sup>*</sup></td>
+                    <td></td>
+                    <td><input type="number " required></td>
+                </tr>
+
+            </P>
+            <p>
+                <tr>
+                    <td> Phone<sup>*</sup></td>
+
+                    <td></td>
+                    <td><input type="number " required></td>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <td> Email<sup>*</sup></td>
+
+                    <td></td>
+                    <td> <input type="email" required></td>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <td>Password (6-8 Characters) <sup>*</sup> </td>
+
+                    <td></td>
+                    <td><input type="password" maxlength="8" required></td>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <td> Verify Password<sup>*</sup> </td>
+
+                    <td></td>
+                    <td><input type="text" required></td>
+                </tr>
+            </p>
+            <p>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="submit" value="SEND"> 
+                    <input type="reset" value="CLEAR"></td>
+                    
+                  
                 </tr>
             </p>
 
         </table>
-        <p>
-            
-        </p>
-        <p>Preference
-            <input type="checkbox" value="Internet Banking">Internet Banking
-            <input type="checkbox" value="Mobile Banking">Mobile Banking
-            <input type="checkbox" value="SMS alerts">SMS alerts
-        </p>
 
-        <p>Address </p>
-        <textarea cols="40" rows="5"></textarea>
-        <p>
-            Country </p>
-        <select>
-            <option value="Please Select">Please Select</option>
-            <option value="Pakistan">Pakistan</option>
-            <option value="India">India</option>
-            <option value="Banglades">Bangladesh</option>
-        </select>
-        <p>zipcode<sup>*</sup>
-            <input type="text " required>
-        </p>
-        Phone<sup>*</sup>
-        <input type="text " required>
-        </p>
-        Email<sup>*</sup>
-        <input type="text " required>
-        </p>
-        Password (6-8 Characters) <sup>*</sup>
-        <input type="text " maxlength="8" required>
-        </p>
-        <p>
-            Verify Password<sup>*</sup>
-            <input type="text" required>
-        </p>
-        <input type="button" value="SEND">
-        <input type="button" value="CLEAR">
+
+
+
+
 
     </form>
 </body>
